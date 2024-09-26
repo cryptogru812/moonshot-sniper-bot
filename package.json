@@ -1,0 +1,44 @@
+{
+  "name": "@wen-moon-ser/moonshot-bot-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{js,ts,json,md}'",
+    "start": "ts-node ./src/main.ts"
+  },
+  "repository": "git@github.com:wen-moon-ser/moonshot-bot-examples.git",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/node-fetch": "^2.6.11",
+    "@types/prompt-sync": "^4.2.3",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.6.1",
+    "eslint-plugin-prettier": "^5.1.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.94.0",
+    "@wen-moon-ser/moonshot-sdk": "3.0.0",
+    "bs58": "^6.0.0",
+    "child_process": "^1.0.2",
+    "jito-ts": "^4.1.1",
+    "prompt-sync": "^4.2.0",
+    "rpc-websockets": "7.10.0"
+  }
+}
